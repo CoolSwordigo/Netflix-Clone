@@ -11,7 +11,7 @@ function Nav() {
             } else handleShow(false);
         });
         return () => {
-            window.removeEventListener("scroll",handleShow.current);
+            window.removeEventListener("scroll",handleShow);
         };
 
     }, []);
